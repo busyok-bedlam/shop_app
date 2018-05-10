@@ -1,0 +1,36 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas:    "header header header header"
+                            "filters sort sort sort"
+                            "filters gallery gallery gallery"
+                            "filters gallery gallery gallery"
+
+}
+.header {
+    grid-area: header;
+    background: red;
+    /* height: 100px; */
+}
+
+.filters {
+    grid-area: filters;
+    background: blue;
+}
+.sort {
+    grid-area: sort;
+    background:yellow;
+}
+
+.gallery {
+    grid-area: gallery;
+    background: orange;
+}
+/*# sourceMappingURL=style.css.map*/
