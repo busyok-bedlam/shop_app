@@ -3,6 +3,7 @@ const htmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
+console.log(process.env.NODE_ENV)
 const config = {
     entry: "./src/index.js",
     output: {
